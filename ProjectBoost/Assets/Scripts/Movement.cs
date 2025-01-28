@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     [SerializeField] float mainThrust = 100f;
+    [SerializeField] float rotationThrust = 1f;
     Rigidbody rb;
     void Start()
     {
@@ -25,15 +24,20 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private static void ProcessRotation()
+    void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            Debug.Log("Rotate Left");
+            ApplyRotation(rotationThrust);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            Debug.Log("Rotate Right");
+            ApplyRotation(-rotationThrust);
         }
+    }
+
+    void ApplyRotation(float rotationThisFrame)
+    {
+        transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
     }
 }
