@@ -487,10 +487,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2070409960373593782, guid: d271daef952b737408635c4b7cce43c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98f497d22bf0cdf4281a67aa09bbc78f, type: 2}
+    - target: {fileID: 2414667962945903130, guid: d271daef952b737408635c4b7cce43c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44c52fdba71c4934c90eaba5972f44e4, type: 2}
+    - target: {fileID: 2502378282759329325, guid: d271daef952b737408635c4b7cce43c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98f497d22bf0cdf4281a67aa09bbc78f, type: 2}
+    - target: {fileID: 3544062161471242556, guid: d271daef952b737408635c4b7cce43c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f930aa312d61a704b9afde87515e487b, type: 2}
     - target: {fileID: 5185070521053537591, guid: d271daef952b737408635c4b7cce43c8, type: 3}
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 5339812777853577677, guid: d271daef952b737408635c4b7cce43c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cccf34868398d2548a81767c310ae934, type: 2}
+    - target: {fileID: 7322281722009514489, guid: d271daef952b737408635c4b7cce43c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98f497d22bf0cdf4281a67aa09bbc78f, type: 2}
+    - target: {fileID: 7680535248011660955, guid: d271daef952b737408635c4b7cce43c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ebe8b6c9c02eaf4f8a5e76f6f58c7a9, type: 2}
     - target: {fileID: 8262141324841130664, guid: d271daef952b737408635c4b7cce43c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.28
