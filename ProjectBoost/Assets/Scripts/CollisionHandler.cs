@@ -8,6 +8,8 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float levelLoadDelay = 1f;
     [SerializeField] AudioClip success;
     [SerializeField] AudioClip death;
+    [SerializeField] ParticleSystem successParticles;
+    [SerializeField] ParticleSystem deathParticles;
 
     AudioSource audioSource;
     bool isTransitioning = false;
@@ -37,8 +39,19 @@ public class CollisionHandler : MonoBehaviour
         isTransitioning = true;
         audioSource.Stop();
         audioSource.PlayOneShot(death);
+        deathParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
+    }
+
+    void StartSuccesfully()
+    {
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(success);
+        successParticles.Play();
+        GetComponent<Movement>().enabled = false;
+        Invoke("NextLevel", levelLoadDelay);
     }
 
     void ReloadLevel()
@@ -58,12 +71,5 @@ public class CollisionHandler : MonoBehaviour
         SceneManager.LoadScene(nextSceneIndex);
     }
 
-    void StartSuccesfully()
-    {
-        isTransitioning = true;
-        audioSource.Stop();
-        audioSource.PlayOneShot(success);
-        GetComponent<Movement>().enabled = false;
-        Invoke("NextLevel", levelLoadDelay);
-    }
+
 }
