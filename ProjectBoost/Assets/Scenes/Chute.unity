@@ -948,8 +948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 190af6d9dfa9f0745b2c2d32203337dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 8, y: 0, z: 0}
-  period: 2
+  movementVector: {x: 0, y: 8, z: 0}
+  period: 2.5
 --- !u!1 &942361036
 GameObject:
   m_ObjectHideFlags: 0
